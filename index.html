@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+  <script src="index.js" defer></script>
   <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
@@ -12,9 +13,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>One Pager</title>
-  <nav>
+  <nav class="mobile-navigation-expanded">
     <div class="navigation-logo"><i class="fas fa-adjust"></i></div>
     <div class="navigation-menu-desktop">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#elements">Elements</a></li>
+        <li><a href="#showcase">Showcase</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="navigation-menu-mobile-collapsed">
+      <button class="navigation-button" id="expand-mobile-navigation">
+        <i class="fa fa-angle-left"></i>
+      </button>
+    </div>
+   
+    <div class="navigation-menu-mobile">
+      <button class="navigation-button" id="collapse-mobile-navigation">
+        <i class="fa fa-angle-right"></i>
+      </button>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#elements">Elements</a></li>
@@ -71,13 +89,56 @@
                 <div class="section-header"> <h2>Elements</h2>
                     <h3>What are the ingredients for an awesome one pager?</h3></div>
                 <div class="card-grid">
+                  <div class="card">
                     <div class="card-icon">
-                    <i class="fa fa-adjust"></i>
+                      <i class="fa fa-adjust"></i>
+                    </div>
+                    <h4>Sections</h4>
+                    <p>
+                      These are like the pages of a magazine. Each may have a custom layout.
+                    </p>
                   </div>
-                  <h4>Sections</h4>
-                  <p>
-                    These are like the pages of a magazine. Each may have a custom layout.
-                  </p></div>
+                  <div class="card">
+                    <div class="card-icon">
+                      <i class="fa fa-adjust"></i>
+                    </div>
+                    <h4>Sections</h4>
+                    <p>
+                      These are like the pages of a magazine. Each may have a custom layout.
+                    </p>
+                  </div><div class="card">
+                    <div class="card-icon">
+                      <i class="fa fa-adjust"></i>
+                    </div>
+                    <h4>Sections</h4>
+                    <p>
+                      These are like the pages of a magazine. Each may have a custom layout.
+                    </p>
+                  </div><div class="card">
+                    <div class="card-icon">
+                      <i class="fa fa-adjust"></i>
+                    </div>
+                    <h4>Sections</h4>
+                    <p>
+                      These are like the pages of a magazine. Each may have a custom layout.
+                    </p>
+                  </div><div class="card">
+                    <div class="card-icon">
+                      <i class="fa fa-adjust"></i>
+                    </div>
+                    <h4>Sections</h4>
+                    <p>
+                      These are like the pages of a magazine. Each may have a custom layout.
+                    </p>
+                  </div><div class="card">
+                    <div class="card-icon">
+                      <i class="fa fa-adjust"></i>
+                    </div>
+                    <h4>Sections</h4>
+                    <p>
+                      These are like the pages of a magazine. Each may have a custom layout.
+                    </p>
+                  </div>
               </div>
           </div>
         </div>

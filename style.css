@@ -223,9 +223,83 @@ p {
   html {
     scroll-behavior: smooth;
   }
-  
 
-  
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+    h3 {
+      font-size: 1.8rem;
+    }
+    h4 {
+      font-size: 1.2rem;
+    }
+  }
+  @media (max-width: 600px) {
+    .navigation-menu-desktop {
+      display: none;
+    }
+  }
 
+  @media (max-width: 860px) {
+    .split {
+      flex-wrap: wrap;
+    }
+    .split-media,
+    .split-text {
+      width: 100%;
+    }
+    .split-media {
+      margin-bottom: 2rem;
+    }
+  }
+  .footer-inner-container {
+    flex-wrap: wrap;
+  }
+
+  .navigation-menu-mobile-collapsed {
+    display: none;
+  }
+
+ 
+
+  @media (max-width: 600px) {
+    .navigation-menu-mobile-collapsed {
+      display: initial;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+    }
+  }
+  .navigation-button {
+    color: var(--theme-color-primary);
+    margin: 1rem 0;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .navigation-menu-mobile {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    padding: 1rem 2rem;
+    background-color: var(--bg-color-secondary);
+    text-align: right;
+  }
+
+  .navigation-menu-mobile {
+    transform: translateX(100%);
+    transition: all 0.5s;
+    visibility: hidden;
+  }
+  .mobile-navigation-expanded .navigation-menu-mobile {
+    visibility: visible;
+    transform: translateX(0);
+  }
+  
 
 
